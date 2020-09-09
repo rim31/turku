@@ -53,7 +53,7 @@ export default function TableCsvName() {
   }
 
   useEffect(() => {
-    getNamesData('/images/first_name.csv');
+    getNamesData('turku/images/first_name.csv');
     setTitle("First names")
   }, [])
 
@@ -70,15 +70,15 @@ export default function TableCsvName() {
           <h1 className=" card-title text-center pt-1">Popular names : {title} </h1>
         </div>
         <div className="d-flex mt-2 mb-2 justify-content-center">
-          <span className="badge badge-pill badge-secondary mr-1 ml-1" onClick={() => { getNamesData('/images/first_name.csv'); setLoading(true); setTitle("First names") }}>name</span>
-          <span className="badge badge-pill badge-secondary mr-1" onClick={() => { getNamesData('/images/year_name.csv'); setLoading(true); setTitle("Names by Years") }}>year</span>
-          <span className="badge badge-pill badge-secondary mr-1" onClick={() => { getNamesData('/images/family_name.csv'); setLoading(true); setTitle("Family names") }}>family</span>
-          <span className="badge badge-pill badge-secondary mr-1" onClick={() => { getNamesData('/images/location_name.csv'); setLoading(true); setTitle("Names by location") }}>location</span>
+          <span className="badge badge-pill badge-secondary mr-1 ml-1" onClick={() => { getNamesData('turku/images/first_name.csv'); setLoading(true); setTitle("First names") }}>name</span>
+          <span className="badge badge-pill badge-secondary mr-1" onClick={() => { getNamesData('turku/images/year_name.csv'); setLoading(true); setTitle("Names by Years") }}>year</span>
+          <span className="badge badge-pill badge-secondary mr-1" onClick={() => { getNamesData('turku/images/family_name.csv'); setLoading(true); setTitle("Family names") }}>family</span>
+          <span className="badge badge-pill badge-secondary mr-1" onClick={() => { getNamesData('turku/images/location_name.csv'); setLoading(true); setTitle("Names by location") }}>location</span>
         </div>
         <div className="input-group-prepend pb-0 pl-2 pr-2">
           <input type="text" className="form-control border search" placeholder="Search ..." value={query} onChange={(e) => setQuery(e.target.value)} aria-label="search place" aria-describedby="alcohol" />
         </div>
-        {loading && (<div className="col-12 text-center full-page-loader"><img height='50' width='50' src='/images/logo.png' alt='LOADING' /><h2>LOADING...</h2></div>)}
+        {loading && (<div className="col-12 text-center full-page-loader"><img height='50' width='50' src='turku/images/logo.png' alt='LOADING' /><h2>LOADING...</h2></div>)}
         <div className="card-body">
           <div className="table-responsive">
             <table className="table tablesorter " id="">

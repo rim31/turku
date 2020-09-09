@@ -9,7 +9,7 @@ export default function Cards() {
       </div>
       <div className="card-body">
         <div className="chart-area text-center">
-          <img src="/images/event.png" alt="event" />
+          <img src="turku/images/event.png" alt="event" />
           <canvas id="chartLinePurple"></canvas>
         </div>
       </div>

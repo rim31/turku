@@ -21,7 +21,7 @@ export default function Covid() {
           <h1 className=" card-title text-center pt-1">Evolution Coronavirus in Finland</h1>
         </div>
         <div className="card-body"></div>
-        {loading && (<div className="col-12 text-center"><img height='50' width='50' src='/images/loading.gif' alt='LOADING' /></div>)}
+        {loading && (<div className="col-12 text-center"><img height='50' width='50' src='turku/images/loading.gif' alt='LOADING' /></div>)}
         <BarCharts data={unstated.dataDiff} labels={unstated.labels} />
       </div>
     </div>
