@@ -54,8 +54,15 @@ export default function ListImages() {
   }, [])
 
   const parseHtml = (htmlString: any) => {
+
+    const regex1: any = /<p>/g;
+    const regex2: any = /<\/p>/g;
+    const regex3: any = /<br>/g;
+    const regex4: any = /<\/br>/g;
+    const toReplace1: string = '';
+    const toReplace2: string = '';
     if (htmlString) {
-      let res: any = htmlString.replaceAll('<p>', '').replaceAll('<br>', '').replaceAll('</br>', '\n').replaceAll('</p>', '\n');
+      let res: any = htmlString.replace(regex1, toReplace1).replace(regex2, toReplace1).replace(regex3, toReplace2).replace(regex4, toReplace2);
       return (res);
     }
   }
