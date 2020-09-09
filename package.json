@@ -1,0 +1,68 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://rim31.github.io/turku",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/axios": "^0.14.0",
+    "@types/bootstrap": "^4.5.0",
+    "@types/chart.js": "^2.9.24",
+    "@types/chartjs": "^0.0.31",
+    "@types/d3": "^5.7.2",
+    "@types/jest": "^24.0.0",
+    "@types/lodash": "^4.14.161",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^12.0.0",
+    "@types/papaparse": "^5.2.2",
+    "@types/react": "^16.9.0",
+    "@types/react-chartjs-2": "^2.5.7",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/recharts": "^1.8.15",
+    "axios": "^0.20.0",
+    "bootstrap": "^4.5.2",
+    "chart.js": "^2.9.3",
+    "chartjs": "^0.3.24",
+    "d3": "^6.1.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.27.0",
+    "papaparse": "^5.3.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.3.0",
+    "react-chartjs-2": "^2.10.0",
+    "react-dom": "^16.13.1",
+    "react-papaparse": "^3.7.3",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "recharts": "^1.8.5",
+    "typescript": "~3.7.2",
+    "unstated-next": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
