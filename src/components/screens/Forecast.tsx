@@ -18,7 +18,7 @@ export default function Forecast() {
   const search = async (e: any) => {
     if (e.key === "Enter") {
       const res: any = await FetchData(query.toLowerCase());
-      console.log(res.data);
+      // console.log(res.data);
       setWeather(res.data);
       setQuery('')
     }

@@ -29,7 +29,7 @@ export const useStore = () => {
       setNextEvents(response.data.meta.next);
     if (response.data.meta.previous)
       setPreviousEvents(response.data.meta.previous);
-    console.log("Response events unstated", response.data);
+    // console.log("Response events unstated", response.data);
     return response.data;
   }
 
