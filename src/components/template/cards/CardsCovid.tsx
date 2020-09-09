@@ -9,7 +9,7 @@ export default function CardsCovid() {
       </div>
       <div className="card-body">
         <div className="chart-area text-center">
-          <img src="turku/images/virus.png" alt="virus" />
+          <img src="/turku/images/virus.png" alt="virus" />
         </div>
       </div>
     </div>

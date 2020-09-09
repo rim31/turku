@@ -24,7 +24,7 @@ export default function NavBar() {
 
   return (
     <div className="navbar navbar-expand-lg navbar-absolute" style={styles.myHeader}>
-      <Link className="d-flex inline" to="/" ><img style={{ zIndex: 10 }} src="/turku/images/meow.png" height="40" alt="meow logo" />
+      <Link className="d-flex inline" to="/turku" ><img style={{ zIndex: 10 }} src="/turku/images/meow.png" height="40" alt="meow logo" />
         <img style={{ zIndex: 10 }} src="/turku/apple-icon-114x114.png" height="36" alt="meow logo" />
       </Link>
       <div id="home" className="container-fluid">

@@ -9,7 +9,7 @@ export default function CardsName() {
       </div>
       <div className="card-body">
         <div className="chart-area text-center">
-          <img src="turku/images/name.png" alt="famous name" />
+          <img src="/turku/images/name.png" alt="famous name" />
         </div>
       </div>
     </div>

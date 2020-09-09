@@ -9,7 +9,7 @@ export default function CardsDrinks() {
       </div>
       <div className="card-body">
         <div className="chart-area text-center">
-          <img src="turku/images/drinks.png" alt="drinks" />
+          <img src="/turku/images/drinks.png" alt="drinks" />
         </div>
       </div>
     </div>

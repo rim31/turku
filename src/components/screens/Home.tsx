@@ -16,7 +16,7 @@ export default function Home() {
   }, [])
   return (
     <div className="content">
-      <div className="alert alert-dismissable border border-default text-center" style={{ backgroundImage: "url(turku/images/turku.jpg)", backgroundPosition: 'center', backgroundSize: '100%', backgroundRepeat: 'no-repeat' }}>
+      <div className="alert alert-dismissable border border-default text-center" style={{ backgroundImage: "url(/turku/images/turku.jpg)", backgroundPosition: 'center', backgroundSize: '100%', backgroundRepeat: 'no-repeat' }}>
         <button className="close mb-0" type="button" data-dismiss="alert">×</button>
         <p className="pt-2 text-capitalize" style={{ fontSize: '2em', color: 'white', fontWeight: 400, textShadow: "1px 1px black" }}>Turku DashBoard : Top OpenData</p>
       </div>
