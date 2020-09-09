@@ -6,7 +6,7 @@ export default function SideBar() {
     <div className="sidebar">
       <div className="sidebar-wrapper">
         <div className="logo">
-          <Link to="/" >
+          <Link to="/turku" >
             <img src='/turku/logo.png' alt="meow" />
           </Link>
         </div>
