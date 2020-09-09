@@ -39,7 +39,7 @@ export default function NavBar() {
         </div>
         <div className="collapse navbar-collapse" id="navigation" style={{ backgroundColor: "black" }} >
           <ul className="navbar-nav ml-auto" data-toggle="collapse" data-target="#navigation">
-            <li className="dropdown nav-item" ><Link className="d-lg-none" to="/turku" >Home <img className="" src="turku/images/meow.png" height="30" alt="meow logo" /></Link></li>
+            <li className="dropdown nav-item" ><Link className="d-lg-none" to="/turku" >Home <img className="" src="/turku/images/meow.png" height="30" alt="meow logo" /></Link></li>
             <li className="dropdown nav-item" ><Link className="d-lg-none" to="/event" >Events</Link></li>
             <li className="dropdown nav-item" ><Link className="d-lg-none" to="/place" >Places</Link></li>
             <li className="dropdown nav-item" ><Link className="d-lg-none" to="/covid" >Covid19</Link></li>
