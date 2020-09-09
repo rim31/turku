@@ -18,7 +18,7 @@ function App() {
       <StoreContainer.Provider>
         <Layout>
           <Switch>
-            <Route exact path={'/'} component={Home} />
+            <Route exact path={'/turku'} component={Home} />
             <Route exact path={'/forecast'} component={Forecast} />
             <Route exact path={'/dashboard'} component={Dashboard} />
             <Route exact path={'/place'} component={TableCsvPlaceAlcohol} />

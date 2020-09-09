@@ -7,7 +7,7 @@ export default function SideBar() {
       <div className="sidebar-wrapper">
         <div className="logo">
           <Link to="/" >
-            <img src='turku/logo.png' alt="meow" />
+            <img src='/turku/logo.png' alt="meow" />
           </Link>
         </div>
         <ul className="nav" style={{ fontSize: "2em" }}>
