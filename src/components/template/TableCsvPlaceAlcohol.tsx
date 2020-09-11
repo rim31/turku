@@ -62,7 +62,7 @@ export default function TableCsvPlaceAlcohol() {
   }
 
   useEffect(() => {
-    getNamesData('turku/images/alkoholilupa_toimipaikkatiedot_34.csv');
+    getNamesData('images/alkoholilupa_toimipaikkatiedot_34.csv');
     setTitle("Places")
   }, [])
 
@@ -85,7 +85,7 @@ export default function TableCsvPlaceAlcohol() {
           <input type="text" className="form-control border search" placeholder="Search a place..." value={query} onChange={(e) => setQuery(e.target.value)} aria-label="search place" aria-describedby="alcohol" />
         </div>
         <div className="card-body">
-          {loading && (<div className="col-12 text-center full-page-loader"><img height='50' width='50' src='turku/images/logo.png' alt='LOADING' /><h2>LOADING...</h2></div>)}
+          {loading && (<div className="col-12 text-center full-page-loader"><img height='50' width='50' src='images/logo.png' alt='LOADING' /><h2>LOADING...</h2></div>)}
           <div className="table-responsive">
             <table className="table tablesorter " id="">
               <thead className=" text-primary">

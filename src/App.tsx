@@ -13,11 +13,7 @@ import { StoreContainer } from "./components/Store"
 
 function App() {
   const [page, setPage] = React.useState<string>("turku")
-  React.useEffect(() => {
-    console.log('page : ', page)
-  }, [page])
   return (
-    // <Router>
     <StoreContainer.Provider>
       <div>
         <NavBar setPage={setPage} />
@@ -28,20 +24,11 @@ function App() {
           {page === 'place' && (<TableCsvPlaceAlcohol />)}
           {page === 'covid' && (<Covid />)}
           {page === 'turku' && (<Home setPage={setPage} />)}
-          {/* <Switch>
-              <Route path={'*'} ><NotFound /></Route>
-            </Switch> */}
         </div>
         <Footer />
       </div >
     </StoreContainer.Provider>
-    // </Router >
   );
 }
-// function NotFound() {
-//   return (
-//     <h1>Page Not Found</h1>
-//   )
-// }
 
 export default App;
