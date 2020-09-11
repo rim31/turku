@@ -1,5 +1,4 @@
 import React, { CSSProperties } from 'react'
-import { Link } from 'react-router-dom';
 
 export interface StylesDictionary {
   [Key: string]: CSSProperties;
@@ -20,13 +19,13 @@ const styles: StylesDictionary = {
   }
 }
 
-export default function NavBar() {
+export default function NavBar(props: any) {
 
   return (
     <div className="navbar navbar-expand-lg navbar-absolute" style={styles.myHeader}>
-      <Link className="d-flex inline" to="/turku" ><img style={{ zIndex: 10 }} src="/turku/images/meow.png" height="40" alt="meow logo" />
+      <div className="d-flex inline" onClick={() => props.setPage("turku")}><img style={{ zIndex: 10 }} src="/turku/images/meow.png" height="40" alt="meow logo" />
         <img style={{ zIndex: 10 }} src="/turku/apple-icon-114x114.png" height="36" alt="meow logo" />
-      </Link>
+      </div>
       <div id="home" className="container-fluid">
         <div className="navbar-wrapper align-middle" style={{ position: 'fixed', float: 'left', top: 0, }}>
           <div className="navbar-toggle d-inline">
@@ -39,11 +38,12 @@ export default function NavBar() {
         </div>
         <div className="collapse navbar-collapse" id="navigation" style={{ backgroundColor: "black" }} >
           <ul className="navbar-nav ml-auto" data-toggle="collapse" data-target="#navigation">
-            <li className="dropdown nav-item" ><Link className="d-lg-none" to="/turku" >Home <img className="" src="/turku/images/meow.png" height="30" alt="meow logo" /></Link></li>
-            <li className="dropdown nav-item" ><Link className="d-lg-none" to="/event" >Events</Link></li>
-            <li className="dropdown nav-item" ><Link className="d-lg-none" to="/place" >Places</Link></li>
-            <li className="dropdown nav-item" ><Link className="d-lg-none" to="/covid" >Covid19</Link></li>
-            <li className="dropdown nav-item" ><Link className="d-lg-none" to="/name" >Popularity</Link></li>
+            <li className="dropdown nav-item" ><div className="d-lg-none" onClick={() => props.setPage("turku")}>Home <img className="" src="/turku/images/meow.png" height="30" alt="meow logo" /></div></li>
+            {/* <li className="dropdown nav-item" ><div className="d-lg-none" onClick={() => props.setPage("turku")}>Home <img className="" src="/images/meow.png" height="30" alt="meow logo" /></div></li> */}
+            <li className="dropdown nav-item" ><div className="d-lg-none" onClick={() => props.setPage("event")} >Events</div></li>
+            <li className="dropdown nav-item" ><div className="d-lg-none" onClick={() => props.setPage("place")} >Places</div></li>
+            <li className="dropdown nav-item" ><div className="d-lg-none" onClick={() => props.setPage("covid")} >Covid19</div></li>
+            <li className="dropdown nav-item" ><div className="d-lg-none" onClick={() => props.setPage("name")} >Popularity</div></li>
           </ul>
         </div>
       </div>
