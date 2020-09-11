@@ -94,14 +94,14 @@ export default function ListImages() {
         </div>
       </div>
       <div className="d-flex row">
-        {loading && (<div className="col-12 text-center full-page-loader"><img height='50' width='50' src='turku/images/logo.png' alt='LOADING' /><h2>LOADING...</h2></div>)}
+        {loading && (<div className="col-12 text-center full-page-loader"><img height='50' width='50' src='images/logo.png' alt='LOADING' /><h2>LOADING...</h2></div>)}
         {allEvents ?
           allEvents.map((event: any, i: number) =>
             (<div key={i} className="col-lg-4 col-md-6 col-sm-6 ">
               <div className="card clearfix" >
                 {event.images && (event.images.length > 0 ?
                   <img className="card-img-top img-fluid " src={event.images[0].url.replace('http', 'https')} alt="event" style={{ width: "100%", height: "15vw", objectFit: 'cover' }} />
-                  : <img className="card-img-top img-fluid " src='turku/images/logo.png' alt="nothing" style={{ height: "15vw", objectFit: 'cover' }} />
+                  : <img className="card-img-top img-fluid " src='images/logo.png' alt="nothing" style={{ height: "15vw", objectFit: 'cover' }} />
                 )}
                 <div className="card-block">
                   <div className="card-body">
@@ -122,7 +122,7 @@ export default function ListImages() {
           :
           (<div>
             <p>Loading</p>
-            <img src="turku/images/logo.png" alt="loading" />
+            <img src="images/logo.png" alt="loading" />
           </div>)}
       </div>
     </div >
