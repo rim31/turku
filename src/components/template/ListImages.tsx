@@ -100,7 +100,7 @@ export default function ListImages() {
             (<div key={i} className="col-lg-4 col-md-6 col-sm-6 ">
               <div className="card clearfix" >
                 {event.images && (event.images.length > 0 ?
-                  <img className="card-img-top img-fluid " src={event.images[0].url.replace('http', 'https')} alt="event" style={{ width: "100%", height: "15vw", objectFit: 'cover' }} />
+                  <img className="card-img-top img-fluid " src={event.images[0].url} alt="event" style={{ width: "100%", height: "15vw", objectFit: 'cover' }} />
                   : <img className="card-img-top img-fluid " src='images/logo.png' alt="nothing" style={{ height: "15vw", objectFit: 'cover' }} />
                 )}
                 <div className="card-block">
