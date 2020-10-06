@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/turku/static/css/main.c36bc8d9.chunk.css",
-    "main.js": "/turku/static/js/main.b3be113e.chunk.js",
-    "main.js.map": "/turku/static/js/main.b3be113e.chunk.js.map",
+    "main.js": "/turku/static/js/main.8a22a09f.chunk.js",
+    "main.js.map": "/turku/static/js/main.8a22a09f.chunk.js.map",
     "runtime-main.js": "/turku/static/js/runtime-main.85a9252a.js",
     "runtime-main.js.map": "/turku/static/js/runtime-main.85a9252a.js.map",
     "static/js/2.093a1003.chunk.js": "/turku/static/js/2.093a1003.chunk.js",
     "static/js/2.093a1003.chunk.js.map": "/turku/static/js/2.093a1003.chunk.js.map",
     "index.html": "/turku/index.html",
-    "precache-manifest.cc82d60c4e0f9f144c32ede95d1d1e6d.js": "/turku/precache-manifest.cc82d60c4e0f9f144c32ede95d1d1e6d.js",
+    "precache-manifest.84ad96b8f34fda0c38777dac914bc86c.js": "/turku/precache-manifest.84ad96b8f34fda0c38777dac914bc86c.js",
     "service-worker.js": "/turku/service-worker.js",
     "static/css/main.c36bc8d9.chunk.css.map": "/turku/static/css/main.c36bc8d9.chunk.css.map",
     "static/js/2.093a1003.chunk.js.LICENSE.txt": "/turku/static/js/2.093a1003.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.85a9252a.js",
     "static/js/2.093a1003.chunk.js",
     "static/css/main.c36bc8d9.chunk.css",
-    "static/js/main.b3be113e.chunk.js"
+    "static/js/main.8a22a09f.chunk.js"
   ]
 }
