@@ -1,30 +1,38 @@
 import React from 'react'
 
+// SIDE BAR : Icon and link to to change pages (using props.setPage from App.tsx)
 export default function SideBar(props: any) {
   return (
     <div className="sidebar">
       <div className="sidebar-wrapper">
-        <div className="logo">
+
+        {/* click to redirect to homepage*/}
+        <div className="logo homeCard">
           <div onClick={() => props.setPage("turku")}>
-            <img src='/turku/logo.png' alt="meow" />
+            {/* LOGO */}
+            <img src="/turku/logo.png" alt="meow" />
           </div>
         </div>
         <ul className="nav" style={{ fontSize: "2em" }}>
-          <li className="tim-icons icon-pin " onClick={() => props.setPage("place")}>
-            <i className="tim-icons icon-pin"></i>
-            <div className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style={{ color: 'white', textDecoration: 'inherit', paddingLeft: '15px', fontSize: "1em" }} >Places</div>
+
+          {/* Place button sidebar */}
+          <li className="tim-icons icon-pin homeCard " onClick={() => props.setPage("place")}>
+            <button className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style={{ all: "unset", color: 'white', textDecoration: 'inherit', paddingLeft: '15px', fontSize: "1em" }} >Places</button>
           </li>
-          <li className="tim-icons icon-pin " onClick={() => props.setPage("event")}>
-            <i className="tim-icons icon-pin"></i>
-            <div className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style={{ color: 'white', textDecoration: 'inherit', paddingLeft: '15px', fontSize: "1em" }} >Events</div>
+
+          {/* Event button sidebar */}
+          <li className="tim-icons icon-pin homeCard" onClick={() => props.setPage("event")}>
+            <button className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style={{ all: "unset", color: 'white', textDecoration: 'inherit', paddingLeft: '15px', fontSize: "1em" }} >Events</button>
           </li>
-          <li className="tim-icons icon-pin " onClick={() => props.setPage("covid")}>
-            <i className="tim-icons icon-chart-pie-36"></i>
-            <div className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style={{ color: 'white', textDecoration: 'inherit', paddingLeft: '15px', fontSize: "1em" }} >Covid19</div>
+
+          {/* covid19 button sidebar */}
+          <li className="tim-icons icon-pin homeCard " onClick={() => props.setPage("covid")}>
+            <button className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style={{ all: "unset", color: 'white', textDecoration: 'inherit', paddingLeft: '15px', fontSize: "1em" }} >Covid19</button>
           </li>
-          <li className="tim-icons icon-pin " onClick={() => props.setPage("name")}>
-            <i className="tim-icons icon-pin"></i>
-            <div className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style={{ color: 'white', textDecoration: 'inherit', paddingLeft: '15px', fontSize: "1em" }} >Popular</div>
+
+          {/* Name button sidebar */}
+          <li className="tim-icons icon-pin homeCard" onClick={() => props.setPage("name")}>
+            <button className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style={{ all: "unset", color: 'white', textDecoration: 'inherit', paddingLeft: '15px', fontSize: "1em" }} >Popular</button>
           </li>
         </ul>
       </div>

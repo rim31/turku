@@ -16618,6 +16618,7 @@ p.description {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.75rem;
+  color:white;
 }
 
 .card-category {
@@ -20569,5 +20570,7 @@ p {
     }
 }
 
-/* /////////////////////////////////// */
-
+/* ////////////// homepage ///////////////////// */
+.homeCard:hover {
+  background-color: rgb(58, 58, 53);
+}
